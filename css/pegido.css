@@ -1,0 +1,101 @@
+body{
+	font-family: 'Work Sans', sans-serif;
+	background-image: url("../images/background2.jpg"); 
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+    color: white;
+
+}
+
+
+header{
+	position: relative;
+	display: block;
+
+}
+
+.contenedor{
+	width: 900px;
+	margin: auto;
+}
+
+
+.logotipo{
+	display: inline-block;
+}
+
+.logotipo img{
+	width: 93px; 
+    height: auto;
+}
+
+.menu{
+    display: inline-block;
+    float: right;
+}
+
+.menu a{
+	color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+	margin: 20px 0 20px 20px;
+    line-height: 4em;
+}
+
+.menu li{
+	display: inline-block;
+}
+
+/*.logocentro{
+	width: 276px;
+	text-align: center;
+}
+*/
+.pablo{
+	margin-bottom: 70px;
+}
+
+.pablo, .socialmedia {
+	text-align: center;
+}
+
+.descripcion{
+	font-size: 1.3em;
+}
+
+.centro{
+	margin-top: 70px;
+}
+
+.logocentro img{
+	width: 276px; 
+    height: auto;
+}
+
+.pablo a{
+	color: white;
+	font-weight: lighter;
+	text-decoration: none;
+	font-size: 1.3em;
+}
+
+.boton{
+	padding:15px 20px;
+	border: 1px solid white;
+}
+
+.logodes{
+	margin-bottom: 45px;
+}
+
+.socialmedia a{
+	padding:0 28px;
+}
+
+.socialmedia i{
+	color: white;
+	font-size: 2.3em;
+}
