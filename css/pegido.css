@@ -43,11 +43,18 @@ header{
     font-size: 1.2em;
 	margin: 20px 0 20px 20px;
     line-height: 4em;
+    transition: 0.4s;
+
+}
+
+.menu a:hover{
+	opacity: .5;	
 }
 
 .menu li{
 	display: inline-block;
 }
+
 
 /*.logocentro{
 	width: 276px;
@@ -85,11 +92,25 @@ header{
 .boton{
 	padding:15px 20px;
 	border: 1px solid white;
+	transition: .3s;
+}
+
+.boton:hover{
+	background:white;
+	color:black;
 }
 
 .logodes{
 	margin-bottom: 45px;
 }
+
+/*.logodes img{
+	transition: .6s;
+}
+
+.logodes img:hover{
+	transform: rotate(360deg);
+}*/
 
 .socialmedia a{
 	padding:0 28px;
@@ -98,4 +119,20 @@ header{
 .socialmedia i{
 	color: white;
 	font-size: 2.3em;
+	transition:.3s;
+}
+
+.socialmedia i:hover{
+	/*transform: scale(1.1);*/
+	animation: .5s boton;
+	transform:scale(1.1);
+}
+
+@keyframes boton{
+	50%{
+		transform:scale(1.3);
+	}
+	100%{
+		transform:scale(1.1);
+	}
 }
