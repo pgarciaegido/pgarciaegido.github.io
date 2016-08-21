@@ -137,8 +137,12 @@ header{
 	}
 }
 
+
+
+
+
 @media screen and (max-width : 1150px){
 	body, .contenedor{
-		min-height: 100vh;
+		height: 100%;
 	}
 }
