@@ -144,6 +144,7 @@ header{
 @media screen and (max-width : 800px){
 	body{
 		height: 100%;
+		width: auto;
 		background-image:100%;
 	}
 	
@@ -151,6 +152,21 @@ header{
 		padding-top:-30px;
 	}*/
 
+	.logotipo img{
+		width: 60px; 
+    	height: auto;
+	}
+
+	.menu a{
+		color: white;
+    	text-decoration: none;
+    	font-weight: bold;
+    	font-size: 1.2em;
+		margin: 20px 10px 20px 20px;
+    	line-height: 2.8em;
+    	transition: 0.4s;
+
+}
 	.logocentro img{
 		width: 210px; 
     	height: auto;
