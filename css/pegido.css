@@ -144,8 +144,6 @@ header{
 @media screen and (max-width : 800px){
 	body{
 		height: 100%;
-		width: auto;
-		background-image:100%;
 	}
 	
 /*	.centro{
