@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?oiwo6h');
+  src:  url('../fonts/icomoon.eot?oiwo6h#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?oiwo6h') format('truetype'),
+    url('../fonts/icomoon.woff?oiwo6h') format('woff'),
+    url('../fonts/icomoon.svg?oiwo6h#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cancel-circle:before {
+  content: "\ea0d";
+}
+
+
+
 body{
 	font-family: 'Work Sans', sans-serif;
 	background-image: url("../images/background2.jpg"); 
@@ -29,6 +64,13 @@ header{
 .logotipo img{
 	width: 93px; 
     height: auto;
+}
+
+.burguer-button{
+	position: fixed;
+	top:35px;
+	left: 35px;
+	display:none;
 }
 
 .menu{
@@ -178,6 +220,73 @@ header{
 	}
 
 	.socialmedia i{
+		font-size: 1.8em;
+	}
+}
+
+@media screen and (max-width : 580px){
+
+	.menu a{
+		font-size: 1em;
+	}
+
+
+}
+
+@media screen and (max-width : 500px){
+	
+	.navegador{
+		width:100%;
+		height: 100px;
+	}
+
+	.socialmedia a{
+		padding:0 10px;
+	}
+
+	.logocentro img{
+		width:180px;
+		height: auto;
+	}
+	
+	.logotipo{
+		display:inline-block;
+		position: absolute;
+		right:0;
+	}
+
+	.menu{
+
+		background: rgba(255,255,255,.7);
+		position: fixed;
+		left:-50%;
+		top:0;
+		bottom:0;
+		right:0;
+		z-index: 2;
+		display:flex;
+		width:50%;
+		align-items: center;
+		transition:.3s;
+	}
+
+	.menu.active{
+		left:0;
+	}
+
+	.menu li{
+		display:block;
+		z-index: 1;
+		color:black;
+	}
+
+	.menu a{
+		color:black;
+	}
+
+	.burguer-button{
+		display: block;
+		z-index: 3;
 		font-size: 1.8em;
 	}
 }

@@ -19,7 +19,8 @@
 	<section id="navegador" class="navegador">
 		<header class="contenedor">
 			<figure class="logotipo"><a href="index.html"><img src="images/logo-nav.svg" alt="Logo Pablo Egido"/></a></figure>
-			<nav class="menu">
+			<span class="burguer-button icon-menu" id="burguer-button"></span>
+			<nav class="menu" id="menu">
 				<ul>
 					<li>
 						<a href="index.html">HOME</a>
@@ -56,6 +57,48 @@
 			</div>
 		</article>
 	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<script>
+		var $burguerButton = document.getElementById("burguer-button");
+      	var $menu = document.getElementById("menu");
+      	function toggleMenu(){
+        	$menu.classList.toggle("active");
+      	};
+
+	      function showMenu(){
+	        $menu.classList.add("active");
+	      };
+
+	    function hideMenu(){
+	    	$menu.classList.remove("active");
+	    };
+
+
+		var pantalla = window.matchMedia("(max-width:500px)");
+      	pantalla.addListener(mediaQuery);
+
+      	function mediaQuery(){
+
+          if(pantalla.matches){
+          console.log("SE CUMPLIÓ LA CONDICIÓN");
+          $burguerButton.addEventListener("touchstart", toggleMenu);
+          }
+
+          else{
+          console.log("NO SE CUMPLIÓ");
+          $burguerButton.removeEventListener("touchstart", toggleMenu);
+         }
+        };
+
+        mediaQuery();
+
+        // HammerJS swipe 
+        var $body = document.body;
+
+        var gestos = new Hammer($body);
+        gestos.on('swipeleft', hideMenu);
+        gestos.on('swiperight', showMenu);
+	</script>
 
 </body>
 
