@@ -3,13 +3,9 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Graphic &amp; Web Designer || Pablo Egido</title>
-  	<link rel="stylesheet" href="css/pegido.css"/>
-	<link href='https://fonts.googleapis.com/css?family=Work+Sans:600,100' rel='stylesheet' type='text/css'/>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:600,100' rel='stylesheet' type='text/css'/> -->
 	<link rel="shortcut icon" type="image/png" href="images/icon.png"/>
-	<link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 </head>
 
 <body>
@@ -58,9 +54,24 @@
 		</article>
 	</section>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-	<script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script>		
+
+
+		// fuentes
+  		WebFont.load({
+  			google: {
+      			families: ['Work+Sans:600,100:latin']
+    		}
+  		});
+
+  		// creamos variables para el boton para abrir el menú y para el propio menú
+
 		var $burguerButton = document.getElementById("burguer-button");
       	var $menu = document.getElementById("menu");
+
+      	// funciones a las que responde el touch
+
       	function toggleMenu(){
         	$menu.classList.toggle("active");
       	};
@@ -73,11 +84,13 @@
 	    	$menu.classList.remove("active");
 	    };
 
+	    // definicion y llamada a saber el tamaño del viewport
 
 		var pantalla = window.matchMedia("(max-width:500px)");
       	pantalla.addListener(mediaQuery);
 
       	function mediaQuery(){
+      		// si el viewport es menor a 500px se puede tocar el botón
 
           if(pantalla.matches){
           console.log("SE CUMPLIÓ LA CONDICIÓN");
@@ -99,6 +112,9 @@
         gestos.on('swipeleft', hideMenu);
         gestos.on('swiperight', showMenu);
 	</script>
+	<link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/pegido.min.css"/>
+
 
 </body>
 

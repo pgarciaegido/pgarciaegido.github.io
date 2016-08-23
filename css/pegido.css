@@ -41,6 +41,7 @@ body{
     background-position: center center; 
     background-size: cover;
     color: white;
+    overflow: hidden;
 
 }
 
@@ -230,6 +231,10 @@ header{
 		font-size: 1em;
 	}
 
+/*	.centro{
+		margin-top:300px;
+	}
+*/
 
 }
 
@@ -290,3 +295,10 @@ header{
 		font-size: 1.8em;
 	}
 }
+
+/*@media screen and (-webkit-min-device-pixel-ratio:2){
+	body{
+			background-image: url("../images/background2x.png"); 
+
+	}
+}*/
