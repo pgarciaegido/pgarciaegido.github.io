@@ -31,8 +31,6 @@
   content: "\ea0d";
 }
 
-
-
 body{
 	font-family: 'Work Sans', sans-serif;
 	background-image: url("../images/background2.jpg"); 
@@ -41,9 +39,11 @@ body{
     background-position: center center; 
     background-size: cover;
     color: white;
-    overflow: hidden;
-
+    overflow-y: auto;
+    margin:0;
+    height:100vh;
 }
+
 
 
 header{
@@ -186,13 +186,9 @@ header{
 
 @media screen and (max-width : 800px){
 	body{
-		height: 100vh;
+		/*height: 100vh;*/
 	}
 	
-/*	.centro{
-		padding-top:-30px;
-	}*/
-
 	.logotipo img{
 		width: 60px; 
     	height: auto;
@@ -296,9 +292,8 @@ header{
 	}
 }
 
-/*@media screen and (-webkit-min-device-pixel-ratio:2){
-	body{
-			background-image: url("../images/background2x.png"); 
-
+@media screen and (min-width:501px) and (max-width: 769px){
+	.centro{
+		margin-top: 120px;
 	}
-}*/
+}
