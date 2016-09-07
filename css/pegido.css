@@ -280,11 +280,14 @@ header{
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 20px;
-
+	font-size: 1.2em;
+	font-weight: bolder;
 }
 
 .form-help{
 	padding-bottom:12px;
+	font-size: 1.2em;
+	font-weight: bolder;
 }
 
 .form-caja, #comments{
@@ -305,13 +308,14 @@ header{
 }
 
 .button{
-	width: 200px;
+	width: 20%;
 	color: #009872;
 	background: white;
 	padding: 10px 0;
 	border: 2px solid #009872;
 	border-radius: 20px;
 	margin: 0 auto;
+	cursor: pointer;
 
 }
 
@@ -353,7 +357,7 @@ header{
 	}
 /*landing*/
 	.landing{
-		height:100vh;
+/*		height:100vh;*/
 	}
 
 	.logotipo img{
@@ -400,6 +404,22 @@ header{
 	}
 
 /*about*/
+/*form*/
+	.contact h2{
+		text-align: center;
+		font-size: 4em;
+	}
+
+	.form-caja{
+		width: 85%;
+	}
+
+	.form-name, .form-email, .form-help, #comments{
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+/*form*/
 }
 @media screen and (min-width : 581px) and (max-width : 710px){
 
@@ -416,11 +436,10 @@ header{
 		font-size: 1em;
 	}
 
-/*	.centro{
-		margin-top:300px;
-	}
-*/
+/*landing*/
+/*form*/
 
+/*form*/
 }
 
 @media screen and (max-width : 500px){
@@ -508,6 +527,8 @@ header{
 
 	.skills{
 		display: block;
+		margin-right:20px;
+		margin-left: 20px;
 	}
 
 	.sk{
@@ -515,6 +536,29 @@ header{
 	}
 
 	/*about*/
+
+	/*contact*/
+	
+	.contact h2{
+		margin-left: 20px;
+		margin-right: 20px;
+		font-size: 3em;
+	}
+	.button{
+		width: 30%;
+	}
+	
+	.form-name, .form-email{
+		display: block;
+		width:auto;
+	}
+	.form-name, .form-email, .form-help, #comments{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+
+	/*contact*/
 }
 
 @media screen and (min-width:501px) and (max-width: 769px){
