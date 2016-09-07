@@ -90,6 +90,26 @@
 		</div>
 	</section>
 <!-- about -->
+<!-- contact -->
+	<section class="contact">
+		<div class="contenedor">
+			<h2>Get in touch!</h2>
+			<form action="" class="formulario">
+				<div class="form-name">
+					<label for="name">Name:</label>
+					<input type="text" class="form-caja" required id="name" name="name"/>
+				</div>
+				<div class="form-email">
+					<label for="email">Email:</label>
+					<input type="email" class="form-caja" required id="email" name="email"/>
+				</div>
+				<label for="comments" class="form-help">How can I help you?</label>
+	            <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+	            <input type="submit" class="button" value="SEND"/>
+			</form>
+		</div>
+	</section>
+
 </div>
 
 
@@ -118,9 +138,9 @@
         	$menu.classList.toggle("active");
       	};
 
-	      function showMenu(){
+	    function showMenu(){
 	        $menu.classList.add("active");
-	      };
+	    };
 
 	    function hideMenu(){
 	    	$menu.classList.remove("active");
