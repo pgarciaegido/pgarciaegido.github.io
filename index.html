@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Pavanam" rel="stylesheet">
+	<link rel="stylesheet" href="src/css/styles.css">
+	<title>Pablo Egido</title>
+</head>
+<body>
+	<section class="info" id="content">
+		<img src="src/img/avatar.jpg" alt="Myself!">
+		<h1>Pablo Egido</h1>
+		<p>Originally from Oviedo, currently living in Madrid (after having lived in some other places).
+			Self-taught web developer focused on front-end and design. Traveller, freethinker, reader.</p>
+		<div class="media">
+			<a target="_blank" href="https://github.com/pgarciaegido" class="icon icon-github"></a>
+			<a target="_blank" href="https://www.linkedin.com/in/pgarc%C3%ADaegido/" class="icon icon-linkedin"></a>
+			<a target="_blank" href="https://www.behance.net/pgarciaegido" class="icon icon-behance"></a>
+			<a target="_blank" href="mailto:pgarciaegido@gmail.com" class="icon icon-paper-plane"></a>
+		</div>
+	</section>
+
+	<script>
+		// Sets info vertically in the middle of the screen
+		var content = document.getElementById('content');
+		var contentHeight = content.offsetHeight;
+		var windowHeight = window.innerHeight;
+
+		// If height of content is larger than window height, set appropiate margin.
+		if (contentHeight < windowHeight) {
+			var availableSpace = windowHeight - contentHeight;
+
+			// It doesnt get right on the middle, but slightly upper. Looks better!
+			var fivePercent = availableSpace * 5 / 100;
+			content.style.marginTop = availableSpace / 2 - fivePercent + 'px';
+		}
+
+	</script>
+</body>
+</html>

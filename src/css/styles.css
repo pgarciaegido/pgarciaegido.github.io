@@ -1,0 +1,104 @@
+
+/* ICOMOON */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?op6lhl');
+  src:  url('fonts/icomoon.eot?op6lhl#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?op6lhl') format('truetype'),
+    url('fonts/icomoon.woff?op6lhl') format('woff'),
+    url('fonts/icomoon.svg?op6lhl#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-behance:before {
+  content: "\e900";
+}
+.icon-brand:before {
+  content: "\e900";
+}
+.icon-social:before {
+  content: "\e900";
+}
+.icon-github:before {
+  content: "\e901";
+}
+.icon-brand2:before {
+  content: "\e901";
+}
+.icon-octacat:before {
+  content: "\e901";
+}
+.icon-social2:before {
+  content: "\e901";
+}
+.icon-linkedin:before {
+  content: "\e902";
+}
+.icon-paper-plane:before {
+  content: "\e903";
+}
+
+/* / ICOMOON */
+
+
+
+body{
+  font-family: 'Pavanam', sans-serif;
+  color: #222;
+}
+
+.info{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.info h1{
+  font-family: 'Bree Serif', serif;
+  color: #49ABDC;
+  text-align: center;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.info img{
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.info p{
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.media{
+  text-align: center;
+}
+
+.media a{
+  color: #222;
+  text-decoration: none;
+  color: #49ABDC;
+  padding: 0 20px;
+  font-size: 1.3em;
+}
